@@ -1,0 +1,7 @@
+@import url("../../css/main.css");
+
+.board {
+    outline: 2px solid black;
+    margin: 0 auto;
+    display: block;
+}
