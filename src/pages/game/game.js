@@ -21,7 +21,7 @@ paddle.activateArrowsMovements(board)
 
 function createBrickWall() {
     const brickRowCount = 4
-    const brickColumnCount = 8
+    const brickColumnCount = 10
     const brickWidth = 50
     const brickHeight = 20
     const brickMargin = 5
@@ -55,24 +55,53 @@ function drawBricks() {
 
 createBrickWall()
 
-function gameLoop() {
-    context.clearRect(0, 0, board.clientWidth, board.clientHeight)
 
-    ball.update()
-    ball.draw(context)
-    paddle.draw(context)
+context.clearRect(0, 0, board.clientWidth, board.clientHeight)
 
-    ball.collisionDetection(paddle, board)
+ball.update()
+ball.draw(context)
+paddle.draw(context)
+drawBricks()
 
-    if (ball.y + ball.radius > board.height) {
-        alert("Game over! You Lost!")
-        settings.resetGame(ball, settings.bricks)
+let gameStarted = false;
+function startGame() {
+    if (!gameStarted) {
+        gameStarted = true;
+        gameLoop();
     }
-
-    drawBricks()
-
-    // Looping
-    requestAnimationFrame(gameLoop)
 }
 
-gameLoop()
+function gameLoop() {
+    context.clearRect(0, 0, board.clientWidth, board.clientHeight);
+
+    ball.update();
+    ball.draw(context);
+    paddle.draw(context);
+
+    ball.collisionDetection(paddle, board);
+
+    if (ball.y + ball.radius > board.height) {
+        alert("Game over! You Lost!");
+        settings.resetGame(ball, settings.bricks);
+        gameStarted = false;
+    }
+
+    drawBricks();
+
+    // Looping
+    if (gameStarted) {
+        requestAnimationFrame(gameLoop);
+
+    }
+}
+
+document.addEventListener('keydown', function (event) {
+    if (event.key === ' ' || event.code === 'Space') {
+        startGame();
+        event.preventDefault(); // Prevent default action if needed  
+    }
+});
+
+board.addEventListener('touchstart', function (event) {
+    startGame();
+});
