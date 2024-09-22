@@ -16,9 +16,27 @@
     </header>
 
     <section class="outer-wrapper">
-        <div class="board-wrapper wrapper">
-            <div class="board-container">
-                <canvas class="board" id="board"></canvas>
+        <div class="game-wrapper wrapper">
+            <p class="scores-counter">0</p>
+
+            <div class="game-main-content">
+                <div class="pole-flag-container">
+                    <div class="pole"></div>
+                    <img src="../../assets/flag/saudi-arabia-flag.svg" alt="Saudi Arabia Flag" class="flag">
+                </div>
+                <div class="board-container">
+                    <canvas class="board" id="board"></canvas>
+                    <div class="game-over-popup-container none" id="game-over-popup-container">
+                        <p class="game-over-title">Game Over!</p>
+                        <p class="scores-counter">0</p>
+                        <button class="restart-game-button">Restart</button>
+                    </div>
+                    <div class="won-popup-container none" id="won-popup-container">
+                        <p class="won-title">You Won!</p>
+                        <p class="scores-counter">0</p>
+                        <button class="restart-game-button">Restart</button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

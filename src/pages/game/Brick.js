@@ -9,6 +9,10 @@ class Brick {
         this.status = 1 // 1: Draw it, 0: Remove it
     }
 
+    setColor(color) {
+        this.color = color;
+    }
+
     draw(context) {
         if (this.status === 1) {
             context.fillStyle = this.color;

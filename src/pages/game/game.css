@@ -1,7 +1,89 @@
 @import url("../../css/main.css");
 
+.board-container {
+    position: relative;
+}
+
 .board {
     outline: 2px solid black;
     margin: 0 auto;
     display: block;
+}
+
+
+/*  */
+.game-main-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: var(--size-8);
+    align-items: center;
+}
+
+.pole-flag-container {
+    height: 90%;
+    align-self: self-end;
+    position: relative;
+}
+
+.pole {
+    height: 100%;
+    width: 10px;
+    background-color: white;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    box-shadow: -2px 0 3px inset gray;
+    position: relative;
+}
+
+.pole::before {
+    content: "";
+    padding: 5px 20px;
+    border-radius: var(--size-20);
+    background-color: white;
+    box-shadow: -2px 0 3px inset gray;
+
+    position: absolute;
+    bottom: -10px;
+    left: 5px;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.pole::after {
+    content: "";
+    padding: 10px;
+    border-radius: var(--size-20);
+    background-color: white;
+    box-shadow: -2px 0 3px inset gray;
+
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+
+.flag {
+    max-width: 200px;
+    position: relative;
+    bottom: 30%;
+    right: var(--size-8);
+}
+
+.game-over-popup-container,
+.won-popup-container {
+    background-color: var(--light-color);
+    text-align: center;
+    padding: var(--size-20);
+    border-radius: var(--size-8);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game-over-title,
+.won-title {
+    font-size: var(--size-20);
+    font-weight: var(--fw-800);
 }
