@@ -11,9 +11,38 @@
 <body>
     <header class="header-outer-wrapper outer-wrapper">
         <div class="header-wrapper wrapper">
-            <div class="logo-container">
-                <img src="../../assets/logo/logo.png" width="40px" alt="Logo" class="logo">
-            </div>
+            <nav class="main-navbar">
+                <a href="/" class="logo-container">
+                    <img src="../../assets/logo/logo.png" width="40px" alt="Logo" class="logo">
+                </a>
+
+                <ul id="desktop-navbar-list-container" class="desktop-navbar-list-container">
+                    <ul class="navbar-list"><a href="/" class="navbar-link">Home</a></ul>
+                    <ul class="navbar-list"><a href="/src/pages/game/game.html" class="navbar-link">Game</a></ul>
+                    <ul class="navbar-list"><a href="/" class="sign-up-button navbar-link primary-button">Sign Up</a>
+                    </ul>
+                    <ul class="navbar-list"><a href="/" class="navbar-link">Log In</a></ul>
+                </ul>
+
+                <div onclick="displayMobilNavbar()" id="hamburger-menu-container" class="hamburger-menu-container">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+
+            </nav>
+
+            <nav class="mobile-navbar">
+                <ul id="mobile-navbar-list-container" class="mobile-navbar-list-container none">
+                    <ul class="navbar-list mobile-navbar-list"><a href="/" class="navbar-link">Home</a></ul>
+                    <ul class="navbar-list mobile-navbar-list"><a href="/src/pages/game/game.html"
+                            class="navbar-link">Game</a></ul>
+                    <ul class="navbar-list mobile-navbar-list sign-up-button"><a href="/"
+                            class="navbar-link primary-button">Sign Up</a>
+                    </ul>
+                    <ul class="navbar-list mobile-navbar-list"><a href="/" class="navbar-link">Log In</a></ul>
+                </ul>
+            </nav>
         </div>
     </header>
 
