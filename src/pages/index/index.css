@@ -1,6 +1,6 @@
 @import url("../../css/main.css");
 
-
+/*  */
 .hero-wrapper {
     display: flex;
     flex-direction: column;
@@ -12,16 +12,76 @@
 .hero-title {
     display: flex;
     flex-direction: column;
-    font-size: var(--size-40);
 }
 
 .hero-image {
-    max-width: 400px;
+    max-width: 340px;
 }
+
+
+/*  */
+.games {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-40);
+}
+
+.games-title {
+    text-align: center;
+}
+
+.games-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-60);
+
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-20);
+}
+
+.game-image {
+    width: 100%;
+    border-radius: var(--size-6);
+}
+
+.game-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-20);
+}
+
+.game-buttons {
+    display: flex;
+    gap: var(--size-6);
+    flex-wrap: wrap;
+}
+
+
+
 
 @media (min-width:640px) {
     .hero-wrapper {
         flex-direction: row;
         gap: var(--size-20);
+    }
+
+    .games-container .game-container:nth-child(2n) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .game-container {
+        flex-direction: row;
+    }
+
+    .game-image {
+        max-width: 900px;
+        min-width: 400px;
     }
 }

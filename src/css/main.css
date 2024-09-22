@@ -1,5 +1,6 @@
 @import url("normalization.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     /* 004326 */
@@ -19,13 +20,15 @@
 
     --wrapper-max-width: 1200px;
 
-    --font-family: "Poppins", sans-serif;
+    --primary-font-family: "Poppins", sans-serif;
+    --secondary-font-family: "Raleway", sans-serif;
 
     --fw-400: 400;
     --fw-500: 500;
     --fw-600: 600;
     --fw-700: 700;
     --fw-800: 800;
+    --fw-900: 900;
 
     --size-88: 5.5rem;
     --size-84: 5.25rem;
@@ -76,7 +79,7 @@ html {
 
 body {
     background-color: var(--primary-color);
-    font-family: var(--font-family);
+    font-family: var(--primary-font-family);
 }
 
 body,
@@ -86,17 +89,34 @@ a {
 }
 
 
+h1 {
+    font-family: var(--primary-font-family);
+    font-weight: var(--fw-900);
+    font-size: var(--size-52);
+}
+
+h2 {
+    font-family: var(--secondary-font-family);
+    font-weight: var(--fw-900);
+    font-size: var(--size-44);
+}
+
+h3 {
+    font-size: var(--size-28);
+}
 
 .outer-wrapper {
     height: auto;
     width: 100%;
-    padding: var(--size-40) var(--size-20);
+    padding: var(--size-60) var(--size-20);
 }
 
 .wrapper {
     max-width: var(--wrapper-max-width);
     margin: 0 auto;
 }
+
+
 
 
 /* Header */
@@ -186,17 +206,25 @@ a {
 
 
 /* Buttons */
-.primary-button {
-    background-color: var(--secondary-color);
-
+.primary-button,
+.ghost-button {
     padding: var(--size-6) var(--size-10);
     border-radius: var(--size-4);
     transition: var(--transition);
+    width: fit-content;
 }
 
-.primary-button:hover {
-    background-color: var(--secondary-color-light);
+.primary-button {
+    background-color: var(--secondary-color);
 }
+
+.primary-button:hover,
+.ghost-button:hover {
+    background-color: var(--secondary-color-light);
+    color: var(--quaternary-color);
+}
+
+
 
 /* Utiiltly classes */
 .none {
