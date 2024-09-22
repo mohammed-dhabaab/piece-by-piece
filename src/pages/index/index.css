@@ -1,1 +1,27 @@
 @import url("../../css/main.css");
+
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--size-40);
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--size-40);
+}
+
+.hero-image {
+    max-width: 400px;
+}
+
+@media (min-width:640px) {
+    .hero-wrapper {
+        flex-direction: row;
+        gap: var(--size-20);
+    }
+}
