@@ -128,6 +128,7 @@ h3 {
     width: 100%;
     padding: var(--size-14) var(--size-16);
     box-shadow: 0 14px 10px -10px rgba(0, 0, 0, 0.5);
+    border-radius: var(--size-20);
 }
 
 .main-navbar {
@@ -182,6 +183,23 @@ h3 {
     background-color: var(--light-color);
 }
 
+
+/* Footer */
+.footer-outer-wrapper {
+    padding: var(--size-14) var(--size-16);
+}
+
+.footer-wrapper {
+    padding: var(--size-14) var(--size-16);
+    box-shadow: 0 -14px 10px -10px rgba(0, 0, 0, 0.5);
+    border-radius: var(--size-20);
+}
+
+.footer-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 @media (min-width:640px) {
     .hamburger-menu-container {
