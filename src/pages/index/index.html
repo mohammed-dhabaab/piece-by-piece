@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Breakout | Home</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/91b0893a8f.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,14 +18,16 @@
                 </a>
 
                 <ul id="desktop-navbar-list-container" class="desktop-navbar-list-container">
-                    <ul class="navbar-list"><a href="/" class="navbar-link">Home</a></ul>
-                    <ul class="navbar-list"><a href="#games" class="navbar-link">Games</a></ul>
-                    <ul class="navbar-list"><a href="/" class="sign-up-button navbar-link primary-button">Sign Up</a>
-                    </ul>
-                    <ul class="navbar-list"><a href="/" class="navbar-link">Log In</a></ul>
+                    <li class="navbar-list"><a href="/" class="navbar-link">Home</a></li>
+                    <li class="navbar-list"><a href="#games" class="navbar-link">Games</a></li>
+                    <li class="navbar-list register-button"><a href="../register/register.html"
+                            class=" navbar-link primary-button">Register</a>
+                    </li>
+                    <li class="navbar-list log-out-button"><i title="Log Out"
+                            class="fa-solid fa-right-from-bracket"></i></li>
                 </ul>
 
-                <div onclick="displayMobilNavbar()" id="hamburger-menu-container" class="hamburger-menu-container">
+                <div id="hamburger-menu-container" class="hamburger-menu-container">
                     <div class="hamburger-line"></div>
                     <div class="hamburger-line"></div>
                     <div class="hamburger-line"></div>
@@ -34,12 +37,13 @@
 
             <nav class="mobile-navbar">
                 <ul id="mobile-navbar-list-container" class="mobile-navbar-list-container none">
-                    <ul class="navbar-list mobile-navbar-list"><a href="/" class="navbar-link">Home</a></ul>
-                    <ul class="navbar-list mobile-navbar-list"><a href="#games" class="navbar-link">Games</a></ul>
-                    <ul class="navbar-list mobile-navbar-list sign-up-button"><a href="/"
-                            class="navbar-link primary-button">Sign Up</a>
-                    </ul>
-                    <ul class="navbar-list mobile-navbar-list"><a href="/" class="navbar-link">Log In</a></ul>
+                    <li class="navbar-list mobile-navbar-list"><a href="/" class="navbar-link">Home</a></li>
+                    <li class="navbar-list mobile-navbar-list"><a href="#games" class="navbar-link">Games</a></li>
+                    <li class="navbar-list mobile-navbar-list register-button"><a href="../register/register.html"
+                            class="navbar-link primary-button">Register</a>
+                    </li>
+                    <li class="navbar-list log-out-button"><i title="Log Out"
+                            class="fa-solid fa-right-from-bracket"></i></li>
                 </ul>
             </nav>
         </div>
@@ -72,7 +76,7 @@
                             bricks, and power up for an epic arcade experience!</p>
                         <div class="game-buttons">
                             <a href="../../pages/game/game.html" class="try-out-button primary-button">Try Out</a>
-                            <a href="../../pages/login/login.html" class="try-out-button ghost-button">Log In</a>
+                            <!-- <a href="../../pages/login/login.html" class="try-out-button ghost-button">Log In</a> -->
                         </div>
                     </div>
                 </div>
@@ -115,14 +119,15 @@
                     <img src="../../assets/logo/logo.png" width="40px" alt="Logo" class="logo">
                 </a>
 
-                <ul id="footer-navbar-list-container" class="desktop-navbar-list-container">
+                <ul id="footer-navbar-list-container" class="footer-navbar-list-container">
                     <ul class="navbar-list"><a href="/" class="navbar-link">Home</a></ul>
                     <ul class="navbar-list"><a href="#games" class="navbar-link">Games</a></ul>
                 </ul>
             </nav>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script type="module" src="index.js"></script>
+    <script type="module" src="../../js/main.js"></script>
 </body>
 
 </html>

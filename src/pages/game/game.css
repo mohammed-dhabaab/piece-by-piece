@@ -5,7 +5,8 @@
 }
 
 .board {
-    outline: 2px solid black;
+    background-color: var(--secondary-color);
+    border-radius: var(--size-8);
     margin: 0 auto;
     display: block;
 }
@@ -17,6 +18,13 @@
     grid-template-columns: 1fr 2fr;
     gap: var(--size-8);
     align-items: center;
+}
+
+.main-pole-flag-container {
+    height: 100%;
+    display: flex;
+    background-color: var(--flag-color);
+    border-radius: var(--size-8);
 }
 
 .pole-flag-container {

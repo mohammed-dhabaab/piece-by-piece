@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="https://kit.fontawesome.com/91b0893a8f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main class="main-container">
+        <div class="sign-up-container sign-container">
+            <h2 class="main-title">Sign Up</h2>
+            <div class="sign-form">
+                <label for="username" class="input-container username-container">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="username" class="username" id="username" placeholder="Username">
+                </label>
+                <span class="warning hidden" id="username-warning">Please, Your name should be &lt; 5 long</span>
+
+                <label for="email" class="input-container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" name="email" class="email" id="email" placeholder="Email">
+                </label>
+                <span class="warning hidden" id="email-warning">Please, Your email should not be empty</span>
+
+                <label for="password" class="input-container">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" class="password" id="password" placeholder="Password">
+                </label>
+                <span class="warning hidden" id="password-warning">Please, Your password should be &lt; 8 long </span>
+
+                <div class="buttons-container">
+                    <button class="sign-up-btn btn highlight-btn">Sign Up</button>
+                    <button class="sign-in-btn btn">Sign In</button>
+                </div>
+            </div>
+        </div>
+        <div id="invalid-popup-box" class="invalid-popup-box none">
+            <p id="invalid-message" class="invalid-message"></p>
+        </div>
+    </main>
+
+    <script src="register.js"></script>
+</body>
+
+</html>

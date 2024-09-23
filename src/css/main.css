@@ -16,7 +16,7 @@
     --light-color: #ffff;
     --dark-color: #000;
 
-    --transition: all 0.3s ease-in-out;
+    --transition: all 0.5s ease-in-out;
 
     --wrapper-max-width: 1200px;
 
@@ -153,8 +153,8 @@ h3 {
     transition: var(--transition);
 }
 
-.sign-up-button {
-    margin-top: var(--size-30);
+.register-button {
+    margin-top: var(--size-10);
 }
 
 
@@ -184,6 +184,15 @@ h3 {
 }
 
 
+.log-out-button {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.log-out-button:hover {
+    color: var(--quaternary-color);
+}
+
 /* Footer */
 .footer-outer-wrapper {
     padding: var(--size-14) var(--size-16);
@@ -201,6 +210,11 @@ h3 {
     align-items: center;
 }
 
+.footer-navbar-list-container {
+    display: flex;
+    gap: var(--size-14);
+}
+
 @media (min-width:640px) {
     .hamburger-menu-container {
         display: none;
@@ -212,7 +226,12 @@ h3 {
         gap: var(--size-18);
     }
 
-    .sign-up-button {
+    .register-button {
+        margin-left: var(--size-30);
+        margin-top: 0;
+    }
+
+    .log-out-button {
         margin-left: var(--size-30);
     }
 }
@@ -220,7 +239,9 @@ h3 {
 
 /* .logo {} */
 
-
+input {
+    background-color: transparent;
+}
 
 
 /* Buttons */

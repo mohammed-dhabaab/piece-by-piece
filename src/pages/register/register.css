@@ -1,0 +1,117 @@
+@import url("../../css/main.css");
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.sign-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--light-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sign-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title {
+    color: var(--secondary-color);
+    transition: var(--transition);
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #eaeaea;
+    padding: 6px 12px;
+    border-radius: 4px;
+    max-height: 65px;
+    overflow: hidden;
+    transition: var(--transition);
+
+}
+
+input {
+    padding: 6px 10px;
+    border: none;
+    background-color: transparent;
+}
+
+input:focus {
+    outline: none;
+}
+
+.fa-solid {
+    color: var(--secondary-color);
+}
+
+.warning {
+    color: var(--quaternary-color);
+    font-size: 12px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    margin-top: 10px;
+}
+
+.btn {
+    background-color: #eaeaea;
+    color: black;
+    padding: 8px 20px;
+    width: 50%;
+    border-radius: var(--size-6);
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: rgb(225, 224, 224);
+}
+
+.highlight-btn {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.highlight-btn:hover {
+    background-color: var(--secondary-color-light);
+}
+
+/*  */
+.invalid-popup-box {
+    background-color: var(--light-color);
+    color: var(--quaternary-color);
+    font-weight: var(--fw-600);
+    padding: var(--size-20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--size-6);
+    box-shadow: 1px 1px 10px 5px #eaeaea;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.invalid-popup-box.visible {
+    opacity: 1;
+    visibility: visible;
+}
