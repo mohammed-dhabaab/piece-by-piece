@@ -40,7 +40,6 @@
     height: 100%;
     height: 480px;
     display: flex;
-    background-color: var(--secondary-color);
     border-radius: var(--size-8);
     grid-area: flag;
 }
@@ -246,7 +245,7 @@
 
     .main-pole-flag-container {
         height: 100%;
-
+        background-color: var(--secondary-color);
     }
 
     .game-details-container {
