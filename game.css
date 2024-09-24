@@ -92,6 +92,7 @@
     position: absolute;
     bottom: 5%;
     left: var(--size-36);
+    z-index: 10;
 }
 
 
