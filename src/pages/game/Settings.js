@@ -19,7 +19,7 @@ class Settings {
             radius: 5,
             speedX: -2,
             speedY: -2,
-            color: "blue",
+            color: "white",
         };
 
         // Paddle settings
@@ -30,7 +30,7 @@ class Settings {
             height: 10,
             radius: this.mainRadius,
             speedX: 5,
-            color: "blue",
+            color: "#058f53",
         };
 
         // Brick settings
@@ -48,7 +48,8 @@ class Settings {
             topOffSet: 60,
             rowGap: 5,
             colGap: 5,
-            bricksColors: ["purple", "blue", "green", "black", "pink"]
+            bricksColors: ["#005430", "#058f53", "white", "#058f53", "#005430"]
+            // bricksColors: ["purple", "blue", "green", "black", "pink"]
         }
 
         this.bricks = []
@@ -75,7 +76,7 @@ class Settings {
         canvas.height = this.boardHeight;
 
         // Update ball and paddle sizes based on new dimensions
-        this.ball.radius = this.boardWidth * 0.01; // Responsive ball size
+        this.ball.radius = Math.max(4, this.boardWidth * 0.01); // Responsive ball size
         this.paddle.width = this.boardWidth * 0.15; // Responsive paddle width
         this.paddle.height = this.boardHeight * 0.014; // Responsive paddle height
         this.paddle.radius = this.boardHeight * 0.007

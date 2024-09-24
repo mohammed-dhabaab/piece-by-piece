@@ -129,7 +129,7 @@ async function signUpUser(url = "", data = {}) {
             }
 
             const user = await response.json();
-            localStorage.setItem('id', user.id);
+            localStorage.setItem('userId', user.id);
             localStorage.setItem("allowance", "true")
             window.location.href = "../index/index.html"
 
@@ -172,7 +172,7 @@ async function signInUser(url = "") {
             return user.email === email.value && user.password === password.value
         })
         if (userIndex + 1) {
-            localStorage.setItem('id', users[userIndex].id);
+            localStorage.setItem('userId', users[userIndex].id);
             localStorage.setItem("allowance", "true")
             window.location.href = "../index/index.html"
         } else {
