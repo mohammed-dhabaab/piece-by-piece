@@ -20,7 +20,7 @@
                 </a>
 
                 <ul id="desktop-navbar-list-container" class="desktop-navbar-list-container">
-                    <li class="navbar-list"><a href="/" class="navbar-link">Home</a></li>
+                    <li class="navbar-list"><a href="#" class="navbar-link">Home</a></li>
                     <li class="navbar-list"><a href="#games" class="navbar-link">Games</a></li>
                     <li class="navbar-list register-button"><a href="register.html"
                             class=" navbar-link primary-button">Register</a>
@@ -39,7 +39,7 @@
 
             <nav class="mobile-navbar">
                 <ul id="mobile-navbar-list-container" class="mobile-navbar-list-container none">
-                    <li class="navbar-list mobile-navbar-list"><a href="/" class="navbar-link">Home</a></li>
+                    <li class="navbar-list mobile-navbar-list"><a href="#" class="navbar-link">Home</a></li>
                     <li class="navbar-list mobile-navbar-list"><a href="#games" class="navbar-link">Games</a></li>
                     <li class="navbar-list mobile-navbar-list register-button"><a href="register.html"
                             class="navbar-link primary-button">Register</a>
@@ -133,14 +133,57 @@
                 </a>
 
                 <ul id="footer-navbar-list-container" class="footer-navbar-list-container">
-                    <ul class="navbar-list"><a href="/" class="navbar-link">Home</a></ul>
+                    <ul class="navbar-list"><a href="#" class="navbar-link">Home</a></ul>
                     <ul class="navbar-list"><a href="#games" class="navbar-link">Games</a></ul>
                 </ul>
             </nav>
         </div>
     </footer>
-    <script type="module" src="index.js"></script>
-    <script type="module" src="main.js"></script>
+    <script>
+
+        // Header
+
+        function displayLogOutButton() {
+            const logOutButtons = document.querySelectorAll(".log-out-button")
+            const registerButtons = document.querySelectorAll(".register-button")
+
+            if (localStorage.getItem("allowance") === "false" || localStorage.getItem("allowance") === undefined || localStorage.getItem("allowance") === null) {
+                logOutButtons.forEach(button => {
+                    button.style.display = "none"
+                });
+                registerButtons.forEach(button => {
+                    button.style.display = "inline-block"
+                });
+            } else {
+                logOutButtons.forEach(button => {
+                    button.style.display = "inline-block"
+                });
+                registerButtons.forEach(button => {
+                    button.style.display = "none"
+                });
+            }
+
+            logOutButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    localStorage.setItem("allowance", "false")
+                    window.location.reload()
+                })
+            })
+        }
+
+        function displayMobilNavbar() {
+            const mobileNavbarListContainer = document.getElementById("mobile-navbar-list-container");
+            const hamburgerMenuContainer = document.getElementById("hamburger-menu-container");
+            hamburgerMenuContainer.addEventListener("click", () => {
+                mobileNavbarListContainer.classList.toggle("none")
+            });
+        }
+
+        displayMobilNavbar()
+        displayLogOutButton()
+    </script>
+    <!-- <script type="module" src="index.js"></script> -->
+    <!-- <script type="module" src="main.js"></script> -->
 </body>
 
 </html>

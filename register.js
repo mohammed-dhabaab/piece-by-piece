@@ -131,7 +131,7 @@ async function signUpUser(url = "", data = {}) {
             const user = await response.json();
             localStorage.setItem('userId', user.id);
             localStorage.setItem("allowance", "true")
-            window.location.href = "../index/index.html"
+            window.location.href = "index.html"
 
         } catch (error) {
             console.error("Error:", error);
@@ -174,7 +174,7 @@ async function signInUser(url = "") {
         if (userIndex + 1) {
             localStorage.setItem('userId', users[userIndex].id);
             localStorage.setItem("allowance", "true")
-            window.location.href = "../index/index.html"
+            window.location.href = "index.html"
         } else {
             invalidPopupBox.classList.add("visible");
             invalidMessage.innerText = "Invalid email or password";
