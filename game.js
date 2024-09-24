@@ -220,7 +220,7 @@ class Settings {
 
     initSettings() {
         // Board settings
-        this.boardWidth = 4380;
+        this.boardWidth = 380;
         this.boardHeight = 280;
 
         this.mainRadius = 4
