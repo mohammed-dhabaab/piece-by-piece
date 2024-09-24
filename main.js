@@ -5,7 +5,7 @@ function displayLogOutButton() {
     const logOutButtons = document.querySelectorAll(".log-out-button")
     const registerButtons = document.querySelectorAll(".register-button")
 
-    if (localStorage.getItem("allowance") === "false" || localStorage.getItem("allowance") === undefined) {
+    if (localStorage.getItem("allowance1") === "false" || localStorage.getItem("allowance1") === undefined) {
         logOutButtons.forEach(button => {
             button.style.display = "none"
         });
@@ -23,7 +23,7 @@ function displayLogOutButton() {
 
     logOutButtons.forEach(button => {
         button.addEventListener("click", () => {
-            localStorage.setItem("allowance", "false")
+            localStorage.setItem("allowance1", "false")
             window.location.reload()
         })
     })

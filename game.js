@@ -477,7 +477,7 @@ restartGameButtons.forEach(button => button.addEventListener("click", e => {
 }))
 
 function displayLoseMessage() {
-    if (localStorage.getItem("allowance") === "true") {
+    if (localStorage.getItem("allowance1") === "true") {
         updateUserBestScore()
     }
     gameOverPopupContainer.classList.remove("none")
@@ -485,7 +485,7 @@ function displayLoseMessage() {
 
 function displayWonMessage() {
     if (brickWall.bricks.every(brick => brick.status === 0)) {
-        if (localStorage.getItem("allowance") === "true") {
+        if (localStorage.getItem("allowance1") === "true") {
             updateUserBestScore()
         }
         wonPopupContainer.classList.remove("none")
@@ -560,7 +560,7 @@ function updateFlagPosition() {
 
 const bestScoresCounterContainers = document.querySelectorAll(".best-scores-counter-container")
 bestScoresCounterContainers.forEach(counter => {
-    if (localStorage.getItem("allowance") === "false") {
+    if (localStorage.getItem("allowance1") === "false") {
         counter.style.display = "none"
     }
 })
@@ -592,11 +592,12 @@ async function setTopThreePlaces() {
             .slice(0, 3);
         firstPlaceTitle.innerText = topThreeUsers[0].username
         firstPlaceBestScore.innerText = topThreeUsers[0].bestScore
-        secondPlaceTitle.innerText = topThreeUsers[1].username
-        secondPlaceBestScore.innerText = topThreeUsers[0].bestScore
-        thirdPlaceTitle.innerText = topThreeUsers[2].username
-        thirdPlaceBestScore.innerText = topThreeUsers[0].bestScore
 
+        secondPlaceTitle.innerText = topThreeUsers[1].username
+        secondPlaceBestScore.innerText = topThreeUsers[1].bestScore
+
+        thirdPlaceTitle.innerText = topThreeUsers[2].username
+        thirdPlaceBestScore.innerText = topThreeUsers[2].bestScore
 
     } catch (error) {
         console.error("Error updating user on server:", error);

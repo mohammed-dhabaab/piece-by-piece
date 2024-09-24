@@ -1,5 +1,5 @@
 const apiURL = "https://66e87262b17821a9d9dcbf14.mockapi.io/users/signup/"
-localStorage.setItem("allowance", "false")
+localStorage.setItem("allowance1", "false")
 
 const signUpBtn = document.querySelector(".sign-up-btn")
 const signInBtn = document.querySelector(".sign-in-btn")
@@ -130,7 +130,7 @@ async function signUpUser(url = "", data = {}) {
 
             const user = await response.json();
             localStorage.setItem('userId', user.id);
-            localStorage.setItem("allowance", "true")
+            localStorage.setItem("allowance1", "true")
             window.location.href = "index.html"
 
         } catch (error) {
@@ -173,7 +173,7 @@ async function signInUser(url = "") {
         })
         if (userIndex + 1) {
             localStorage.setItem('userId', users[userIndex].id);
-            localStorage.setItem("allowance", "true")
+            localStorage.setItem("allowance1", "true")
             window.location.href = "index.html"
         } else {
             invalidPopupBox.classList.add("visible");
