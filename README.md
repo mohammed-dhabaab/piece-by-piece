@@ -19,7 +19,7 @@
 Experience the classic arcade thrill of Breakout, where you bounce a ball to shatter bricks and unleash power-ups for endless fun!
 
 <div style="display:flex; justify-content: center;">
-  <img src="./assets/readme/view/view-main.png" alt="Project snapshot" />
+  <img src="src/assets/readme/overview/overview.png" alt="Project snapshot" />
 </div>
 
 ## ✨ Features
