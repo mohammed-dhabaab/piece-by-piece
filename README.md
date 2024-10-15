@@ -1,9 +1,9 @@
 <div style="display:flex; justify-content: center;">
-  <img src="./assets/readme/banner/banner.jpg" alt="Project Logo" />
+  <img src="src/assets/readme/banner/banner.svg" alt="Project Logo" />
 </div>
 
-## 📂 Table of Contents
-- [📂 Table of Contents](#-table-of-contents)
+## 📂 Table of **Contents**
+- [📂 Table of **Contents**](#-table-of-contents)
 - [📋 Project Description](#-project-description)
 - [✨ Features](#-features)
 - [⛏️ Built Using](#️-built-using)
@@ -34,9 +34,9 @@ Experience the classic arcade thrill of Breakout, where you bounce a ball to sha
 ## ⛏️ Built Using
 
 ### Frontend
-<a href="https://www.javascript.com/" target="_blank" rel="noreferrer"><img src="./assets/readme/skills/frontend/javascript.svg" width="36" height="36" alt="JavaScript" title="JavaScript" /></a>
-<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="./assets/readme/skills/frontend/html.svg" width="36" height="36" alt="HTML5" title="HTML5" /></a>
-<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="./assets/readme/skills/frontend/css.svg" width="36" height="36" alt="CSS3" title="CSS3" /></a>
+<a href="https://www.javascript.com/" target="_blank" rel="noreferrer"><img src="./src/assets/readme/skills/frontend/javascript.svg" width="36" height="36" alt="JavaScript" title="JavaScript" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="./src/assets/readme/skills/frontend/html.svg" width="36" height="36" alt="HTML5" title="HTML5" /></a>
+<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="./src/assets/readme/skills/frontend/css.svg" width="36" height="36" alt="CSS3" title="CSS3" /></a>
 
 
 ### Assets
@@ -62,5 +62,3 @@ Experience the classic arcade thrill of Breakout, where you bounce a ball to sha
 
 ## 🏅Acknowledgments
 - [Tuwaiq Academy](https://tuwaiq.edu.sa/)
-- [Trainer. Dimah Aldossari](https://github.com/Dimah-Aldossari)
-- [Trainer. Ziad Alsaedi](https://github.com/ZiadAlsaedi)
