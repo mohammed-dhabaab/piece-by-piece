@@ -8,9 +8,9 @@
 - [✨ Features](#-features)
 - [⛏️ Built Using](#️-built-using)
   - [Frontend](#frontend)
-  - [Assets](#assets)
 - [🔍 Explore The Project](#-explore-the-project)
 - [📥 Installation](#-installation)
+- [📝 Usage](#-usage)
 - [💳 License](#-license)
 - [✍ Contributors](#-contributors)
 - [🏅Acknowledgments](#acknowledgments)
@@ -23,6 +23,8 @@ Experience the classic arcade thrill of Breakout, where you bounce a ball to sha
 </div>
 
 ## ✨ Features
+- Simple controls for moving a paddle to bounce a ball and break bricks
+- User can register and login; to save his scores and display his scores on leaderborad
 - Clean and visually appealing layout
 - Interactive sounds
 - Responsive design
@@ -39,17 +41,34 @@ Experience the classic arcade thrill of Breakout, where you bounce a ball to sha
 <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="./src/assets/readme/skills/frontend/css.svg" width="36" height="36" alt="CSS3" title="CSS3" /></a>
 
 
-### Assets
-- [Tuwaiq Academy](https://tuwaiq.edu.sa/)
-
-
 ## 🔍 Explore The Project
-- [Tuwaiq Academy Clone](https://mohammed-dhabaab.github.io/tuwaiq-academy-clone/index.html)
+- [Piece By Piece](src/assets/logo/logo.svg)
 
 
 ## 📥 Installation
-1. Clone the project or download the zip version of the project than unzip it
-2. Open the index.html file on your browser
+
+1. Clone the project or download the zip version of the project then unzip it
+2. You need to install [node.js=18.20.2](https://nodejs.org/en/blog/release/v18.20.2), to ensure compatibility as the project built with it
+3. Add node.js to environment variables (PATH)
+4. Use the package manager npm to install all the dependencies specified within the package.json file using the command line within the root directory of the project:
+   ```shell
+   npm install
+   ```
+
+## 📝 Usage
+
+To explore Blogmors, follow the following steps:
+
+1. Follow [📥 Installation](#-installation) process
+2. Run the development environment or build the production environment
+   - To run the development environment, use the following command using the command line within the root directory of the project:
+     ```shell
+     npm run dev
+     ```
+   - To build the production environment, use the following command using the command line within the root directory of the project:
+     ```shell
+     npm run build
+     ```
 
 ## 💳 License
 - [MIT](https://choosealicense.com/licenses/mit/)
