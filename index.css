@@ -1,0 +1,136 @@
+@import url("main.css");
+
+/*  */
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--size-40);
+}
+
+.hero-title {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-image {
+    max-width: 340px;
+}
+
+
+/*  */
+.games {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-40);
+}
+
+.games-title {
+    text-align: center;
+}
+
+.games-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-60);
+
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--size-20);
+}
+
+.game-image {
+    width: 100%;
+    border-radius: var(--size-6);
+}
+
+.game-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-20);
+}
+
+.game-buttons {
+    display: flex;
+    gap: var(--size-6);
+    flex-wrap: wrap;
+}
+
+
+/*  */
+.event-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-20);
+}
+
+.event-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-20);
+}
+
+.nd-badge {
+    content: "";
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: var(--size-16);
+    background-color: var(--secondary-color);
+    position: absolute;
+    top: -40px;
+    right: -20px;
+}
+
+
+.event-image-container {
+    position: relative;
+    max-width: 600px;
+}
+
+.event-image {
+    border-radius: var(--size-8);
+}
+
+.event-description {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-16);
+}
+
+@media (min-width:640px) {
+    .hero-wrapper {
+        flex-direction: row;
+        gap: var(--size-20);
+    }
+
+    .games-container .game-container:nth-child(2n) {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .game-container {
+        flex-direction: row;
+    }
+
+    .game-image {
+        max-width: 900px;
+        min-width: 400px;
+    }
+
+    .event-content {
+        flex-direction: row;
+        gap: var(--size-40);
+    }
+
+    .try-out-button-event {
+        margin-top: auto;
+    }
+
+}

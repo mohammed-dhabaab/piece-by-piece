@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 
@@ -16,6 +17,194 @@
   <script>
     window.location.href = "./src/pages/index/index.html"
   </script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./public/favicon.ico" type="image/x-icon">
+
+    <title>Piece By Piece</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/91b0893a8f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header-outer-wrapper outer-wrapper">
+        <div class="header-wrapper wrapper">
+            <nav class="main-navbar">
+                <a href="index.html" class="logo-container">
+                    <img src="assets/logo/logo.png" width="40px" alt="Logo" class="logo">
+                </a>
+
+                <ul id="desktop-navbar-list-container" class="desktop-navbar-list-container">
+                    <li class="navbar-list"><a href="#" class="navbar-link">Home</a></li>
+                    <li class="navbar-list"><a href="#games" class="navbar-link">Games</a></li>
+                    <li class="navbar-list register-button"><a href="register.html"
+                            class=" navbar-link primary-button">Register</a>
+                    </li>
+                    <li class="navbar-list log-out-button"><i title="Log Out"
+                            class="fa-solid fa-right-from-bracket"></i></li>
+                </ul>
+
+                <div id="hamburger-menu-container" class="hamburger-menu-container">
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                    <div class="hamburger-line"></div>
+                </div>
+
+            </nav>
+
+            <nav class="mobile-navbar">
+                <ul id="mobile-navbar-list-container" class="mobile-navbar-list-container none">
+                    <li class="navbar-list mobile-navbar-list"><a href="#" class="navbar-link">Home</a></li>
+                    <li class="navbar-list mobile-navbar-list"><a href="#games" class="navbar-link">Games</a></li>
+                    <li class="navbar-list mobile-navbar-list register-button"><a href="register.html"
+                            class="navbar-link primary-button">Register</a>
+                    </li>
+                    <li class="navbar-list log-out-button"><i title="Log Out"
+                            class="fa-solid fa-right-from-bracket"></i></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="outer-wrapper">
+        <div class="hero-wrapper wrapper">
+            <h1 class="hero-title">
+                Unleash the Fun With
+            </h1>
+
+            <div class="hero-image-container">
+                <img src="assets/logo/logo.png" alt="Logo" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+
+    <section class="outer-wrapper">
+        <div id="games" class="games wrapper">
+            <h2 class="games-title">Explore Our Games</h2>
+            <div class="games-container">
+                <div class="game-container">
+                    <div class="game-image-container">
+                        <img src="assets/pages/index/breakout-game-image.jpg" alt="" class="game-image">
+                    </div>
+                    <div class="game-content">
+                        <h3 class="game-title">Breakout</h3>
+                        <p class="game-description">Smash your way to victory in Breakout! Bounce the ball, clear the
+                            bricks, and power up for an epic arcade experience!</p>
+                        <div class="game-buttons">
+                            <a href="game.html" class="try-out-button primary-button">Try Out</a>
+                            <!-- <a href="login.html" class="try-out-button ghost-button">Log In</a> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="game-container">
+                    <div class="game-image-container">
+                        <img src="assets/pages/index/jigsaw-game-image.jpg" alt="" class="game-image">
+                    </div>
+                    <div class="game-content">
+                        <h3 class="game-title">Jigsaw</h3>
+                        <p class="game-description">Unleash your inner puzzle master with Jigsaw! Piece together
+                            stunning images and enjoy endless fun!</p>
+                        <div class="game-buttons">
+                            <div class="try-out-button primary-button">Coming Soon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="outer-wrapper">
+        <div class="wrapper event-wrapper">
+            <h2 class="events-title">What's New</h2>
+            <div class="event-content">
+                <div class="event-image-container">
+                    <img src="assets/pages/index/nd-event.png" alt="Event Image" class="event-image">
+                    <div class="nd-badge"><img src="assets/nd/nd94-logo.png" alt="Event Badge"></div>
+                </div>
+                <div class="event-description">
+                    <h3 class="event-title">Saudi Arabia 94 National Day!</h3>
+                    <p class="event-description">Join us in celebrating Saudi Arabia National Day! This special event
+                        invites all players to honor the spirit of unity and pride in our nation. Participate in our
+                        exclusive breakout game and stand a chance to win exciting rewards!</p>
+                    <p>Rise the flag and get your
+                        rewards!</p>
+                    <a href="game.html" class="try-out-button-event try-out-button primary-button">Rise
+                        It Now</a>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer-outer-wrapper outer-wrapper">
+        <div class="footer-wrapper wrapper">
+            <nav class="footer-navbar">
+                <a href="index.html" class="logo-container">
+                    <img src="assets/logo/logo.png" width="40px" alt="Logo" class="logo">
+                </a>
+
+                <ul id="footer-navbar-list-container" class="footer-navbar-list-container">
+                    <ul class="navbar-list"><a href="#" class="navbar-link">Home</a></ul>
+                    <ul class="navbar-list"><a href="#games" class="navbar-link">Games</a></ul>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script>
+
+        // Header
+
+        function displayLogOutButton() {
+            const logOutButtons = document.querySelectorAll(".log-out-button")
+            const registerButtons = document.querySelectorAll(".register-button")
+
+            if (localStorage.getItem("allowance1") === "false" || localStorage.getItem("allowance1") === undefined || localStorage.getItem("allowance1") === null) {
+                logOutButtons.forEach(button => {
+                    button.style.display = "none"
+                });
+                registerButtons.forEach(button => {
+                    button.style.display = "inline-block"
+                });
+            } else {
+                logOutButtons.forEach(button => {
+                    button.style.display = "inline-block"
+                });
+                registerButtons.forEach(button => {
+                    button.style.display = "none"
+                });
+            }
+
+            logOutButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    localStorage.setItem("allowance1", "false")
+                    window.location.reload()
+                })
+            })
+        }
+
+        function displayMobilNavbar() {
+            const mobileNavbarListContainer = document.getElementById("mobile-navbar-list-container");
+            const hamburgerMenuContainer = document.getElementById("hamburger-menu-container");
+            hamburgerMenuContainer.addEventListener("click", () => {
+                mobileNavbarListContainer.classList.toggle("none")
+            });
+        }
+
+        displayMobilNavbar()
+        displayLogOutButton()
+    </script>
+    <!-- <script type="module" src="index.js"></script> -->
+    <!-- <script type="module" src="main.js"></script> -->
+>>>>>>> a1b03a205fe73c0bab86eb7de8ac856cddc3651d
 </body>
 
 </html>
