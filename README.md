@@ -42,7 +42,7 @@ Experience the classic arcade thrill of Breakout, where you bounce a ball to sha
 
 
 ## 🔍 Explore The Project
-- [Piece By Piece]([src/assets/logo/logo.svg](https://mohammed-dhabaab.github.io/piece-by-piece/))
+- [Piece By Piece](https://mohammed-dhabaab.github.io/piece-by-piece/src/pages/index/index.html)
 
 
 ## 📥 Installation
